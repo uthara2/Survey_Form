@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <h1>Survey Form</h1>
+    <p class="p1">Let us know how we can improve our website</p><br>
+
+    <form id="survey_form">
+    <div class="div1" >
+        
+    <label class="name">Name :
+         
+        <input id="name" type="text" placeholder="Enter your name" required ></label>
+        <br>
+        <br>
+
+    <label class="email">Email : <input id="email" type="email" placeholder="Enter email id" required></label>
+    <br>
+    <br>
+
+    <label class="age">Age : <input id="age" type="number" placeholder="Enter your age"></label>
+    <br>
+    <br>
+
+    <label class="role">Current Role : 
+        <select name="role" id="role">
+            <option value="student">Student</option>
+            <option value="employee">Employee</option>
+            <option value="professor">Professor</option>
+        </select> </label>
+        <br>
+        <br>
+
+        <p class="p2">How likely is thay you recommend this to a friend?</p>
+        <div class="div2">
+        <input type="radio" name="recomendation" >
+        <label class="recommend">Yes</label>
+        <br> <input type="radio" name="recomendation">
+        <label class="recommend">No</label>
+        <br><input type="radio" name="recomendation">
+        <label class="recommend">Maybe</label></div>
+        <br>
+        <br>
+
+    <p class="p2">Things that should be improved in future (Check all that apply) : </p>
+    <div class="div2">
+    <input type="checkbox">
+    <label class="improve">Frontend</label>
+    <br><input type="checkbox">
+    <label class="improve">Backend</label>
+    <br><input type="checkbox">
+    <label class="improve">Others</label></div>
+    <br>
+    <br>
+
+    <label class="comment">Any comment and suggestions : </label><br>
+            <textarea id="comment" name="comment" rows="4" cols="90"></textarea>
+            
+        <br>
+        <br>
+        
+        <div class="div3">
+        <button class="btn" type="submit">Submit</button>
+        </div>
+        <br>
+    
+    
+    </div> 
+    </form>
+</body>
+</html>
